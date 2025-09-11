@@ -166,7 +166,9 @@ body{
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
+.container{
+  padding-inline: 16px;
+}
 
 
 
@@ -211,9 +213,39 @@ body{
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+.navbar,
+.overlay
+{
+display:none;
+}
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header{
+  padding-block: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+.header.active{
+  position: fixed;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-1);
 
-
-
+  animation: slidIn 500ms ease forwards;
+}
+@keyframes slideIn{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 
 
 /*-----------------------------------*\
