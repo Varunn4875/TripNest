@@ -30,4 +30,8 @@ const header=document.querySelector("[data-header]")
 window.addEventListener('scroll',function(){
 	header.classList[window.scrollY > 100 ?"add" : "remove"]
 ("active")
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 842c68f3bea6d71ab646be2113ed8474122a1c06
