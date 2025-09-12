@@ -213,7 +213,7 @@ body.nav-active{
   opacity: 0;
 }
 .preloader .img{
-  animation: bounce 800ms ease-in-out infinite alternate ;
+  animation: bounce 500ms ease-in-out infinite alternate ;
 }
 
 @keyframes bounce{
