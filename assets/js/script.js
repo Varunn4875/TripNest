@@ -6,7 +6,7 @@
 
      setTimeout(function() {
          preloader.classList.add("remove") 
-     },2500); 
+     },1500); 
 
 const addEventOnElements=function(elements,eventType,callback){
 	for(let i=0, len=elements.length; i<len; i++){
