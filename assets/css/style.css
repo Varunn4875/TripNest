@@ -131,6 +131,10 @@ a{
   text-decoration: none;
   color: inherit;
 }
+img{
+  height:auto ;
+}
+
 input,button
 {
   background: none;
@@ -161,15 +165,10 @@ body{
   color: var(--text-granite-gray);
   font-size: var(--fontSize-6);
   line-height: 1.8;
-  height: 300vh;
 }
 body.nav-active{
   overflow: hidden;
 }
-body.nav-active{
-  overflow: hidden;
-}
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -188,6 +187,47 @@ body.nav-active{
   max-width: max-content;
   transition: var(--transition-1);
 }
+.btn-secondary{
+  background-color: var(--bg-red-salsa);  
+}
+.btn-secondary:is(:hover,:focus-visible){
+  background-color: var(--bg-english-vermillion);
+  box-shadow: var(--shadow-3);
+}
+.section{
+  padding-block-end: :var(--section-spacing);
+}
+.has-bg-image{
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+.title{
+  color: var(--text-gunmetal);
+  font-weight: var(--weight-semiBold);
+  line-height: 1.45;
+}
+.h1{
+  font-size: var(--fontSize-1);
+  line-height: 1.2;  
+}
+.h2{
+  font-size: var(--font-size-2);  
+}
+.h3{
+  font-size: var(--font-size-4);
+}
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-2);
+}
+.w-100{
+  width: 100%;
+
+}
+
 
 
 
@@ -345,13 +385,7 @@ body.nav-active{
   background-color: var(--bg-ocean-blue);
   box-shadow: var(--shadow-2);
 }
-.btn-secondary{
-  background-color: var(--bg-red-salsa);  
-}
-.btn-secondary:is(:hover,:focus-visible){
-  background-color: var(--bg-english-vermillion);
-  box-shadow: var(--shadow-3);
-}
+
 .overlay
 {
 position: fixed;
@@ -373,6 +407,18 @@ transition: var(--transition-1);
   #HERO
 \*-----------------------------------*/
 
+.hero{
+  padding-block-start: 150px;
+}
+.hero .container{
+  display: grid;
+  gap: 50px;
+}
+.hero-subtitle{
+  background-color: var(--bg-misty-rose);
+  color: var(--text-light-coral);
+  font-size: var(--font-size-7);
+}
 
 
 
