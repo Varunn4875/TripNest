@@ -167,7 +167,7 @@ body{
   line-height: 1.8;
 }
 body.nav-active{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /*-----------------------------------*\
   #REUSED STYLE
@@ -225,8 +225,16 @@ body.nav-active{
 }
 .w-100{
   width: 100%;
-
 }
+.section-subtitle{
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+}
+.section-title{
+  margin-block:10px ;
+}
+
 
 
 
@@ -418,17 +426,81 @@ transition: var(--transition-1);
   background-color: var(--bg-misty-rose);
   color: var(--text-light-coral);
   font-size: var(--font-size-7);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
 }
-
-
-
+.hero-title{
+  margin-block: 20px;
+}
+.hero-text{
+  margin-block-end: 30px;
+}
+.hero .btn-secondary{
+  margin-block-end: 20px;
+}
+.hero-btn{
+  color: var(--text-gunmetal);
+  font-weight: var(--weight-medium);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: var(--transition-1);
+}
+.hero-btn .btn-img{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: var(--bg-gainsboro);
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-1);
+}
+.hero-btn .img-cover{
+  border-radius: inherit;
+  border-radius: var(--radius-circle);
+}
+.hero-btn ion-icon{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%,-50%);
+  background-color: var(--bg-white);
+  padding: 10px;
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-1);
+}
+.hero-btn:is(:hover,:focus-visible){
+  color: var(--text-majorelle-blue);
+}
 
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
 
+.service .container{
+  display: grid;
+  gap: 25px;
+}
+.service-card:nth-child(2){
+  background-color: var(--bg-chrome-yellow-alpha-5);
 
-
+}
+.service-card:nth-child(3){
+  background-color: var(--bg-red-salsa-alpha-5);
+}
+.service-card:nth-child(4){
+  background-color: var(--bg-majorelle-blue-alpha-5);
+}
+.service-card{
+  padding: 25px 20px;
+  border-radius: var(--radius-20);
+}
+.service-card .card-title{
+  margin-block: 10px 5px;
+}
 
 
 /*-----------------------------------*\
