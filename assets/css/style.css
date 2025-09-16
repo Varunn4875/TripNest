@@ -206,6 +206,7 @@ body.nav-active{
   color: var(--text-gunmetal);
   font-weight: var(--weight-semiBold);
   line-height: 1.45;
+  font-size: var(--font-size-2); 
 }
 .h1{
   font-size: var(--fontSize-1);
@@ -233,6 +234,7 @@ body.nav-active{
 }
 .section-title{
   margin-block:10px ;
+  font-size: var(--font-size-2); 
 }
 .img-holder{
   aspect-ratio: var(--width) / var(--height);
@@ -514,6 +516,7 @@ transition: var(--transition-1);
 \*-----------------------------------*/
 .desti .section-title{
   margin-block-end: 40px;
+  font-size: 3.6rem
 }
 .desti{
   margin-inline: 20px;
@@ -580,7 +583,38 @@ transition: var(--transition-1);
 /*-----------------------------------*\
   #EXPERIENCE
 \*-----------------------------------*/
+.exp .container{
+  display: grid;
+  gap: 50px;
 
+}
+.exp-banner{
+  position: relative;
+}
+.exp .section-title{
+   font-size: 3.6rem;
+}
+.exp .section-text{
+  margin-block-end: 20px;
+}
+.exp-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-start: 15px;
+}
+.exp-item .item-title{
+  color: var(--text-majorelle-blue);
+  font-size: 3.6rem;
+  font-weight: var(--weight-bold);
+}
+.exp-shape{
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 25%;
+  filter: drop-shadow(var(--shadow-4));
+}
 
 
 
@@ -588,7 +622,17 @@ transition: var(--transition-1);
 /*-----------------------------------*\
   #GALLERY
 \*-----------------------------------*/
-
+.gallery .section-title{
+  margin-block-end: 40px;
+  font-size: 3.6rem;
+}
+.gallery-list{
+  display: grid;
+  gap: 15px;
+}
+.gallery .item-banner{
+  border-radius: var(--radius-30);  
+}
 
 
 
