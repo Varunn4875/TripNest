@@ -490,6 +490,9 @@ transition: var(--transition-1);
   display: grid;
   gap: 25px;
 }
+.h2{
+  font-size: 30px;
+}
 .service-card:nth-child(2){
   background-color: var(--bg-chrome-yellow-alpha-5);
 
@@ -640,15 +643,131 @@ transition: var(--transition-1);
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
+.cta-card{
+  background-color: var(--bg-misty-rose);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: var(--radius-30);
+}
 
-
+.cta .section-title .img{
+  display: inline-block;
+}
+.cta .section-title {
+  margin-block: 0 20px;
+  font-size: 3.5rem;
+}
+.cta .btn{
+  margin-inline: auto; 
+  margin-block-start: 20px;
+}
 
 
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer-top{
+  display: grid;
+  gap: 40px;
+  padding-block: 60px ;
+}
+.footer-top .logo img{
+  width: 180px;
+}
+.footer-brand .footer-text{
+  margin-block: 20px;
+}
+.social-list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social-link{
+  color: var(--text-majorelle-blue);
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+}
+.social-link:is(:hover, :focus-visible) {
+  background-color: var(--bg-majorelle-blue);
+  color: var(--text-white);
+}
+.footer-list-title{
+  color: var(--text-gunmetal);
+  font-size:var(--fontSize-5) ;
+  font-weight: var(--weight-semiBold);
+  margin-block-end: 15px;
+}
+.footer-link{
+  margin-block-start: 10px;
+}
+.footer-link:is(:hover,:focus-visible){
+  text-decoration: underline;
+}
+.footer-list .footer-text{
+   margin-block-end: 15px;
+}
+.input-field{
+  height: 55px;
+  padding-inline: 25px 60px;
+  border: 1px solid var(--border-gainsboro);
+  color: var(--text-gunmetal);
+  border-radius: var(--radius-pill);
+}
+.input-wrapper {
+  position: relative;           
+  display: inline-block;        
+}
 
+.input-field {
+  width: 300px;                 /* set width for demonstration */
+  padding: 12px 50px 12px 16px; /* add right padding to make space for button */
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.input-btn {
+  position: absolute;
+  top: 50%;                     /* vertical centering */
+  right: 10px;                  /* horizontal offset from right edge */
+  transform: translateY(-50%);  /* correct centering */
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--bg-majorelle-blue);
+  color: var(--text-white);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-btn:hover {
+  background-color: #5a3fe0;    /* optional hover color */
+}
+.input-btn ion-icon:hover{
+  transform: translateX(-10px) rotate(45deg);
+}
+.footer-bottom{
+  padding-block: 30px;
+  border-block-start: 1px solid var(--border-gainsboro);
+}
+.copyright{
+  margin-block-end: 20px;
+}
+.copyright-link{
+  display: inline-block;
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-medium);
+}
+.footer-bottom-link:is(:hover, :focus-visible)
+{
+  text-decoration: underline;
+}
 
 
 
@@ -656,3 +775,87 @@ transition: var(--transition-1);
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+/*responsive for larger than 575px screen*/
+
+@media (min-width: 575px){
+  /*reused style*/
+  .container{
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /*header*/
+  .navbar{
+    padding-inline: 40px;  /*paddingrightand left*/
+    padding-block-start: 40px;  /*paddingtop*/
+  }
+
+
+  /*herosection*/
+  .hero-text{
+    max-width: 42ch;
+  }
+  .hero .wrapper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero .btn{
+    margin-block-end: 0;    
+  }
+
+
+  /*servicesection*/
+  .service .container{
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  /*destination*/
+  .desti-list{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*footersection*/
+  .footer-bottom-list{
+    display: flex;
+    gap: 30px;
+  }
+}
+
+  /*responsive for larger than 768px screen*/
+
+ @media(min-width: 768px){
+  /*custom property*/
+
+  :root{
+    /*typography*/
+
+
+    /*font-size*/
+    --fontSize-1:4.8rem;
+    --fontSize-2:4rem;
+    --fontSize-3:2.8rem;
+    --fontSize-4:2.6rem;
+    --fontSize-5:2.2rem;
+    --fontSize-6:1.6rem;
+    --fontSize-7:1.6rem;
+
+
+    /*spacing*/
+    --section-spacing:120px;
+  }
+      /*reusedstyle*/
+      .container{
+        max-width: 720px;
+      }
+      .btn{
+        height: 60px;
+        padding-inline: 40px;
+      }
+
+ }
+   
+
