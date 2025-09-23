@@ -1,12 +1,12 @@
  const preloader=document.querySelector("[data-preloader]");
 
-// window.addEventListener("load",()=>{
-// 	preloader.classList.add("remove")
-// });
+window.addEventListener("load",()=>{
+	preloader.classList.add("remove")
+});
 
-     setTimeout(function() {
-         preloader.classList.add("remove") 
-     },1500); 
+     // setTimeout(function() {
+     //     preloader.classList.add("remove") 
+     // },1500); 
 
 const addEventOnElements=function(elements,eventType,callback){
 	for(let i=0, len=elements.length; i<len; i++){
